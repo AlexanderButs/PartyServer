@@ -2,6 +2,8 @@
 {
     public class Invitation
     {
+        public long Id { get; set; }
+
         public long InitiatorId { get; set; }
 
         public long TargetId { get; set; }

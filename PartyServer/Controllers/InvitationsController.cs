@@ -32,6 +32,7 @@ namespace PartyServer.Controllers
 
             var invitation = new Invitation
             {
+                Id = invite.Id,
                 InitiatorId = invite.InitiatorId,
                 TargetId = invite.TargetId
             };
@@ -50,7 +51,7 @@ namespace PartyServer.Controllers
                 TargetId = invitation.TargetId
             };
             _partyContext.Invitations.Add(invite);
-            int i = await _partyContext.SaveChangesAsync();
+            await _partyContext.SaveChangesAsync();
 
             return Ok();
         }

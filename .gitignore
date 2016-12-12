@@ -1,0 +1,21 @@
+# User-specific files
+*.suo
+*.user
+*.sln.docstates
+*.ide
+
+# Build results
+
+[Dd]ebug/
+[Rr]elease/
+x64/
+build/
+[Bb]in/
+[Oo]bj/
+
+# NuGet Packages Directory
+packages/
+*.lock.json
+*.nuget.props
+*.nuget.targets
+.vs
