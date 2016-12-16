@@ -1,9 +1,10 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace PartyServer.DomainModel
 {
-    public class Invitation
+    internal class Invitation
     {
         [Key]
         [Column("id")]
@@ -15,5 +16,8 @@ namespace PartyServer.DomainModel
 
         [Column("target_id")]
         public long TargetId { get; set; }
+
+        [Column("expiration_time")]
+        public DateTime ExpirationTime { get; set; }
     }
 }
