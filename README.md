@@ -1,2 +1,2 @@
 # PartyServer
-Service for party management
+Service for party management with docker support.
